@@ -1,1 +1,1 @@
-# automate-nmap
+Just a baby code! 
