@@ -3,6 +3,8 @@ import subprocess
 
 ip = input("[*] Enter the target: ")
 file = input("[*] Enter the name of the file ")
+ext = ".nmap"
+name = file + ext
 
 while True :
     port = input("[*] Do you want to scan all ports? ")
@@ -28,7 +30,7 @@ while True:
     result = input("Do you want to investigate the results? ")
     
     if result.lower() == ("y"):
-        os.system("less /home/immnan/Documents/Python\ priojects/Automation/Auto/*.nmap")       
+        subprocess.run(["less", name])       
         break
 
     elif result.lower() == ("n"):
@@ -37,3 +39,5 @@ while True:
     else :
         print("Please answer y or n ")
         continue    
+
+
