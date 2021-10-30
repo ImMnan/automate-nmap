@@ -22,3 +22,18 @@ while True :
 
     else :
         print("[*] Please enter y or n! to exit press q")
+
+
+while True:
+    result = input("Do you want to investigate the results? ")
+    
+    if result.lower() == ("y"):
+        os.system("less /home/immnan/Documents/Python\ priojects/Automation/Auto/*.nmap")       
+        break
+
+    elif result.lower() == ("n"):
+        break
+    
+    else :
+        print("Please answer y or n ")
+        continue    
